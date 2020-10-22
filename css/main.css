@@ -1,0 +1,41 @@
+body{
+  overflow-x: hidden;
+}
+
+#move {
+  transform: translate(0,0);
+  transition: transform 1s;
+}
+
+
+
+.text h1{
+  font-family: Hind;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 11vh;
+  font-size: 9vh;
+  color: #00AEFF;
+  margin-left: 25vh;
+}
+
+.text p{
+  font-family: Hind;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 25vh;
+  color: rgba(31, 31, 31, 0.6);
+}
+
+
+.logo{
+  margin-left: 5vh;
+}
+
+canvas{
+position: absolute;
+top: 5px;
+left: 50vh;
+
+
+}
