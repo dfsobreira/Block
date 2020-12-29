@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="css/schedule.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/main_logo.svg" alt="">
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="schedule.html">SCHEDULE</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="team.html">TEAM</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="full">
+    <div class="schedule">
+      <h1>Schedule</h1>
+      <p>On this first day of the event we will bring <br>to you an introduction on how blockchain <br>and cryptocurrencies work, from how it <br>started to how it is evolving.<br><span id="dots"></span><span id="more"> During this full day you will
+          experience <br>talks, workshops and networking <br>moments focused on the most widely <br>used applications of this technology in <br>lots of different areas, such as finances <br>and law.</span></p>
+      <a onclick="myFunction()" id="myBtn">Learn more</a>
+    </div>
+    <div class="days">
+      <div class="myBtn1">
+        <a onclick="myFunction()" id="myBtn1"><h3>Day 01</h3></a>
+        <p id="myBtn1">Sat, February 06</p>
+      </div>
+      <div class="myBtn2">
+        <a onclick="myFunction()" id="myBtn2"><h3>Day 02</h3></a>
+        <p id="myBtn2">Sun, February 07</p>
+      </div>
+    </div>
+  </div>
+  <div class="final">
+    <div class="contacts">
+      <h3>Contacts</h3>
+    </div>
+    <div class="textc">
+      <p>geral@portobc.com <br>+351 926 590 223 <br>+351 919 818 111</p>
+    </div>
+    <div class="organizer">
+      <h3>Organizer</h3>
+    </div>
+    <div class="link">
+      <a href="https://jeknowledge.pt/">
+        <img src="images/jek.svg">
+      </a>
+    </div>
+    <div class="conect">
+      <h3>Connect with us!</h3>
+    </div>
+    <div class="social">
+      <a href="https://jeknowledge.pt/">
+        <img src="images/facebook.svg">
+      </a>
+      <a href="">
+        <img src="images/linked.svg">
+      </a>
+      <a href="">
+        <img src="images/insta.svg">
+      </a>
+    </div>
+  </div>
+</body>
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Learn more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Learn more";
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+
+</html>

@@ -1,0 +1,145 @@
+body {
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: Hind;
+  font-style: normal;
+}
+
+.navbar {
+  margin-right: 5vw;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  text-align: center;
+  list-style: none;
+}
+
+nav li {
+  display: inline-table;
+  padding: 0 40px 0px 40px;
+}
+
+nav a {
+  display: block;
+  color: rgba(76, 76, 76, 1);
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.logo img {
+  height: 8rem;
+  margin-left: 5vw;
+}
+
+.faq {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 10vh;
+}
+
+.accordion {
+  padding: 0px;
+  height: 8vh;
+  background-color: #FFFFFF;
+  color: rgba(31, 31, 31, 0.8);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  display: inline-block;
+  background: linear-gradient(270deg, #00CCFF 4%, #0099FF 34.76%, #CC66FF 65.33%, #6600CC 96.28%);
+  background-size: 100% 2px;
+  background-position: top 5px left 0, bottom 0 left 0;
+  background-repeat: no-repeat;
+}
+
+.panel {
+  margin: 0px;
+  color: rgba(31, 31, 31, 0.8);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+  margin: 0px;
+}
+
+.final {
+  position: relative;
+  width: 100vw;
+  height: 25vh;
+  background-color: #F0F0F3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40% 60%;
+  color: rgba(76, 76, 76, 1);
+}
+
+.contacts {
+  place-self: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.textc {
+  place-self: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.organizer {
+  place-self: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.link {
+  place-self: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.conect {
+  place-self: center;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.social {
+  place-self: center;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social img {
+  margin: 0px 2vw;
+}

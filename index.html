@@ -1,144 +1,281 @@
+<!DOCTYPE html>
 <html>
-        <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        </head>
-        <body>
-        <div class="logo">
-          <img src="img/main_logo.svg" alt="">
-        </div>
-        <div class="text">
-          <h1>PORTO<br>BLOCKCHAIN<br>CONFERENCE</h1>
-          <p>Porto.BC is for anyone who wants to learn more<br>about Blockchain technology for new projects or their jobs.</p>
-        </div>
-        <img id="move" src="img/cube.svg" alt="">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-        <script>
-        var three = THREE;
 
-    var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera(60, window.innerWidth/ window.innerHeight ,0.5, 1000);
-    camera.position.z = 5;
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
 
-    var renderer = new THREE.WebGLRenderer({ alpha: true });
-    renderer.setSize(window.innerWidth , window.innerHeight);
-    renderer.setPixelRatio( window.devicePixelRatio );
-    document.body.appendChild(renderer.domElement);
+<body>
+  <div class="homepage">
+    <nav>
+      <div class="logo">
+        <img src="images/main_logo.svg" alt="">
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="schedule.html">SCHEDULE</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="team.html">TEAM</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <h1 class="text">
+        <span class="text-wrapper">
+          <p class="letters">PORTO</p>
+          <p class="letters1">BLOCKCHAIN</p>
+          <p class="letters2">CONFERENCE</p>
+        </span>
+      </h1>
+      <p id="textof">Porto.BC is for anyone who wants to learn more about<br>Blockchain technology for new projects or their jobs.</p>
+    </div>
+    <iframe src='https://my.spline.design/testes-0952e589d2dae705283a8a3f6f126d69/' frameborder='0'></iframe>
+  </div>
+  <div class="date">
+    <h1>February 6th and 7th</h1>
+    <p>We already count the days</p>
+  </div>
+  <div class="countdown">
+    <p id="counter"></p>
+  </div>
+  <div class="what">
+    <h2>What is Blockchain?</h2>
+    <p>The answer is not simple, but it is also not complicated.<br>Blockchain is literally just a chain of blocks but not in the <br>traditional sense of those words. We are actually talking <br>about digital pieces of information - <b>block</b> -
+      stored in a <br>public database - <b>chain</b>. It is a protocol designed for <br>storage and digital transactions in a safe and <br>non-corruptible way.</p>
+    <div id="fact" class="fact" style="display:none">
+      <h3>Fact</h3>
+      <p>The global blockchain market is <br>expected to be worth $20 <br>bilion by 2024.</p>
+    </div>
+    <div class="animation">
+      <lottie-player id="anim" src="https://assets6.lottiefiles.com/packages/lf20_em5kn4r4/pasta sem nome/data.json" background="transparent" speed="0.7" style="width: 70rem; height: 70rem;" autoplay></lottie-player>
+    </div>
+  </div>
+  <div class="pc">
+    <h1>We’re going remote!</h1>
+    <img src="images/mac.svg" alt="">
+  </div>
+  <div class="reasons">
+    <h1>7 reasons to attend Porto.BC</h1>
+    <p id="texto0">Be a part of a disruptive event that is being <br>meticulously organized in order to fulfill all <br>of your expectations, despite the adversities <br>caused by the pandemic</p>
+    <p id="texto1">Meet Blockchain experts</p>
+    <p id="texto2">Develop your professional network</p>
+    <p id="texto3">Invest in yourself</p>
+    <p id="texto4">Present your ideas and work with others</p>
+    <p id="texto5">2 days of amazing keynotes and workshops</p>
+    <p id="texto6">Be inspired and have fun!</p>
+    <div class="floating">
+      <img src="images/float.svg" alt="">
+    </div>
+  </div>
+  <div class="about">
+    <h1>About </h1>
+    <p>During two full days, we will create the perfect environment for learning <br>from amazing and skilled experts who have taken Blockchain to the next <br>level and discussing several subjects around this technology. By combining <br>talks with
+      workshops, our conference format amplifies the opportunity for <br>developing your skills.<br>We're certain that you have a lot to talk about! Share your thoughts with <br>the speakers, sponsors and the rest of the participants during the
+      <br>networking moments that will be provided through the two days of the <br>event.
+    </p>
+    <div class="mouse">
+      <img id="dots" src="images/dots.svg" alt="">
+      <ul id="scene" class="scene" data-hover-only="true" data-relative-input="true">
+        <li data-depth="0.2"><img src="images/phone.png"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="scroller">
+    <div class="rolling">
+      <h1>You don’t want to miss any news</h1>
+    </div>
+    <canvas id="canvas1" width="770" height="771" align="right"></canvas>
+  </div>
+  <div class="form">
+    <p>Subscribe to get first-hand news about <br> Porto Blockchain Conference!</p>
+    <div class="submiter">
+      <input type="text" placeholder="Insira o seu e-mail" name="email" id="email" required>
+    </div>
+  </div>
+  <div class="final">
+    <div class="contacts">
+      <h3>Contacts</h3>
+    </div>
+    <div class="textc">
+      <p>geral@portobc.com <br>+351 926 590 223 <br>+351 919 818 111</p>
+    </div>
+    <div class="organizer">
+      <h3>Organizer</h3>
+    </div>
+    <div class="link">
+      <a href="https://jeknowledge.pt/">
+        <img src="images/jek.svg">
+      </a>
+    </div>
+    <div class="conect">
+      <h3>Connect with us!</h3>
+    </div>
+    <div class="social">
+      <a href="https://jeknowledge.pt/">
+        <img src="images/facebook.svg">
+      </a>
+      <a href="">
+        <img src="images/linked.svg">
+      </a>
+      <a href="">
+        <img src="images/insta.svg">
+      </a>
+    </div>
+  </div>
+  <script>
+    //flashligth effect
+    var can = document.getElementById('canvas1');
+    var ctx = can.getContext('2d');
 
-    //Cube
-    var geometry = new THREE.BoxGeometry(1.5, 1.5, 1.5);
-    var material = new THREE.MeshLambertMaterial({color: 0x00aaff});
-    var light = new THREE.DirectionalLight( 0xffffff, 1.5 );
-    light.position.set( 0,0.0 ,1).normalize();
-    scene.add(light);
+    can.addEventListener('mousemove', function(e) {
+      var mouse = getMouse(e, can);
+      redraw(mouse);
+    }, false);
 
-    var cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
-
-/* */
-var isDragging = false;
-var previousMousePosition = {
-x: 0,
-y: 0
-};
-$(renderer.domElement).on('mousedown', function(e) {
-isDragging = true;
-})
-.on('mousemove', function(e) {
-var deltaMove = {
-  x: e.offsetX - previousMousePosition.x,
-  y: e.offsetY - previousMousePosition.y
-};
-
-if (isDragging) {
-
-  var deltaRotationQuaternion = new three.Quaternion()
-    .setFromEuler(new three.Euler(
-      toRadians(deltaMove.y * 1),
-      toRadians(deltaMove.x * 1),
-      0,
-      'XYZ'
-    ));
-
-  cube.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
-}
-
-previousMousePosition = {
-  x: e.offsetX,
-  y: e.offsetY
-};
-});
-/* */
-
-$(document).on('mouseup', function(e) {
-isDragging = false;
-});
-
-
-
-// shim layer with setTimeout fallback
-window.requestAnimFrame = (function() {
-return window.requestAnimationFrame ||
-window.webkitRequestAnimationFrame ||
-window.mozRequestAnimationFrame ||
-function(callback) {
-  window.setTimeout(callback, 1000 / 60);
-};
-})();
-
-var lastFrameTime = new Date().getTime() / 1000;
-var totalGameTime = 0;
-
-function update(dt, t) {
-
-cube.rotation.y += 1 * dt;
-
-setTimeout(function() {
-var currTime = new Date().getTime() / 1000;
-var dt = currTime - (lastFrameTime || currTime);
-totalGameTime += dt;
-
-update(dt, totalGameTime);
-
-lastFrameTime = currTime;
-}, 0);
-}
-
-function animate(){
-      requestAnimationFrame(animate);
-
-update(0, totalGameTime);
-      renderer.render(scene, camera);
+    var img = new Image();
+    img.onload = function() {
+      redraw({
+        x: -500,
+        y: -500
+      })
     }
-animate();
+    img.src = 'images/hidden.svg';
 
 
-function toRadians(angle) {
-return angle * (Math.PI / 180);
-}
+    function redraw(mouse) {
+      console.log('a');
+      can.width = can.width;
+      ctx.drawImage(img, 0, 0);
+      ctx.beginPath();
+      ctx.rect(0, 0, 1500, 1500);
+      ctx.arc(mouse.x, mouse.y, 170, 0, Math.PI * 2, true)
+      ctx.clip();
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, 1500, 1500);
+    }
+    // Creates an object with x and y defined,
+    // set to the mouse position relative to the state's canvas
+    // If you wanna be super-correct this can be tricky,
+    // we have to worry about padding and borders
+    // takes an event and a reference to the canvas
+    function getMouse(e, canvas) {
+      var element = canvas,
+        offsetX = 0,
+        offsetY = 0,
+        mx, my;
 
-function toDegrees(angle) {
-return angle * (180 / Math.PI);
-}
+      // Compute the total offset. It's possible to cache this if you want
+      if (element.offsetParent !== undefined) {
+        do {
+          offsetX += element.offsetLeft;
+          offsetY += element.offsetTop;
+        } while ((element = element.offsetParent));
+      }
 
-//animacoes cubos background
-const $cube = $("#move")
-let x = 0
-let y=0
-let directionx = 1
-let directiony = 1
-const interval = setInterval(() => {
-  x = x + 1 * directionx
-  y = y + 1 * directiony
+      mx = e.pageX - offsetX;
+      my = e.pageY - offsetY;
 
-  $cube.css({ transform: `translate(${x}vw,${y}vh)` })
+      // We return a simple javascript object with x and y defined
+      return {
+        x: mx,
+        y: my
+      };
+    }
+  </script>
+  <script>
+    //letters animation atempt
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.text .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-  if (x >= window.innerWidth / 10 || x < 0) directionx = directionx * -1
-  if (y >= 15|| y < -100) directiony = directiony * -1
-  }, 100)
+    anime.timeline()
+      .add({
+        targets: '.text .letter',
+        scale: [0, 1],
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 70 * i
+      });
+    var textWrapper1 = document.querySelector('.text .letters1');
+    textWrapper1.innerHTML = textWrapper1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-          </script>
-        </body>
+    anime.timeline()
+      .add({
+        targets: '.text .letter',
+        scale: [0, 1],
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 70 * i
+      });
+
+    var textWrapper2 = document.querySelector('.text .letters2');
+    textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline()
+      .add({
+        targets: '.text .letter',
+        scale: [0, 1],
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 70 * i
+      });
+  </script>
+  <script src="images/parallax.min.js"></script>
+  <script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+  </script>
+  <script>
+    //chart text timer
+    anim.addEventListener('play', function() {
+      var d = new Date();
+      var n = d.getTime();
+      console.log(d.getTime())
+      setTimeout(function() {
+        $('#fact').show();
+      }, 3000);
+    })
+  </script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script>
+    //countdowns
+    // Set the date we're counting down to
+    var countDownDate = new Date("February 6, 2021 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById("counter").innerHTML = "<b>&nbsp &nbsp" + days + "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp " + hours + "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp" + minutes +
+        "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp " + seconds + "</b><br />" + "DAYS &nbsp &nbsp &nbsp HOURS &nbsp &nbsp &nbsp MINUTES &nbsp &nbsp &nbsp SECONDS";
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("counter").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+</body>
+
 </html>

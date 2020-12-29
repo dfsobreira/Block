@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="css/faq.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/main_logo.svg" alt="">
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="schedule.html">SCHEDULE</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="team.html">TEAM</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="faq">
+    <h1>FAQ</h1>
+    <button class="accordion">Why should I attend the Porto Blockchain Conference?</button>
+    <div class="panel">
+      <p>We have several speakers with amazing content that cover multiple sectors <br>and explain the applications of Blockchain technology in companies and the <br>tools for its implementation!<br>With the ticket, you have access to all the
+        activities throughout the event.<br>Take this opportunity for personal and professional development!</p>
+    </div>
+    <button class="accordion">How can I learn more about this event?</button>
+    <div class="panel">
+      <p>You can explore our website and visit our social networks for more information! If you still have any personal question or doubt that you wish to ask us, you can send an email to geral@portobc.com</p>
+    </div>
+    <button class="accordion">How will the online event work?</button>
+    <div class="panel">
+      <p>The entire event will be broadcast on Zoom. There will be moments with talks, workshops, and networking. When purchasing a ticket, participants can register for the workshops they find most interesting.</p>
+    </div>
+    <button class="accordion">How will the workshops work?</button>
+    <div class="panel">
+      <p>As the whole event, the workshops will be through the Zoom application, and we will create simultaneous rooms with different workshops.</p>
+    </div>
+    <button class="accordion">Who are the speakers at the event?</button>
+    <div class="panel">
+      <p>We have already announced some incredible speakers, and more news are coming! Pay attention to the schedule that is being launched and updated on our social networks.</p>
+    </div>
+    <button class="accordion">Can I attend a conference for one day only?</button>
+    <div class="panel">
+      <p>Yes! When purchasing a ticket, you will have the option to purchase for just one of the event days or for both.</p>
+    </div>
+    <button class="accordion">Where do I buy a ticket?</button>
+    <div class="panel">
+      <p>Ticket sales have not yet started but will be on our website. Once we have processed your registration and payment, a confirmation detailing your registration will be sent.</p>
+    </div>
+    <button class="accordion">How do I become an event partner?</button>
+    <div class="panel">
+      <p>For more information about our partnership opportunities, contact our team. You will receive a detailed email with our partnership packages, and we will be available to gather and discuss opportunities.</p>
+    </div>
+    <button class="accordion">My company wants our blockchain team to participate in the event. Are group discounts available?</button>
+    <div class="panel">
+      <p>Yes! Group discounts are available and are not limited to companies. If you want to join 10 friends, you also get discounts! Get in touch with our team to find out more details.</p>
+    </div>
+  </div>
+  <div class="final">
+    <div class="contacts">
+      <h3>Contacts</h3>
+    </div>
+    <div class="textc">
+      <p>geral@portobc.com <br>+351 926 590 223 <br>+351 919 818 111</p>
+    </div>
+    <div class="organizer">
+      <h3>Organizer</h3>
+    </div>
+    <div class="link">
+      <a href="https://jeknowledge.pt/">
+        <img src="images/jek.svg">
+      </a>
+    </div>
+    <div class="conect">
+      <h3>Connect with us!</h3>
+    </div>
+    <div class="social">
+      <a href="https://jeknowledge.pt/">
+        <img src="images/facebook.svg">
+      </a>
+      <a href="">
+        <img src="images/linked.svg">
+      </a>
+      <a href="">
+        <img src="images/insta.svg">
+      </a>
+    </div>
+  </div>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
