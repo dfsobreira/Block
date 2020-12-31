@@ -54,16 +54,25 @@ nav a {
   grid-template-columns: 2fr 3fr;
   grid-template-rows:  1fr ;
 }
+.schedule{
+  margin-left: auto;
+  margin-right: auto;
+
+}
 .days{
   display: grid;
-  grid-template-columns: 15vw 1fr;
-  grid-template-rows:  10vh 1fr ;
+  grid-template-columns: 15vw 15vw 1fr;
+  grid-template-rows: 15vh 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
 }
 .myBtn1{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  background: linear-gradient(270deg, #00DFFD 4%, #00AEFF 34.76%, #B56DF5 65.33%, #6F0BDA 96.28%);
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .myBtn2{
@@ -71,6 +80,102 @@ nav a {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+}
+#hora1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#hora2{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end:4 ;
+}
+#hora3{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end:5 ;
+}
+#hora4{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end:6;
+}
+#hora5{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end:7;
+}
+#hora6{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end:8;
+}
+#hora7{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end:9;
+}
+#hora8{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 9;
+  grid-row-end:10;
+}
+#texto1{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#texto2{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end:4 ;
+}
+#texto3{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end:5 ;
+}
+#texto4{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end:6;
+}
+#texto5{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end:7;
+}
+#texto6{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end:8;
+}
+#texto7{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end:9;
+}
+#texto8{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end:10;
 }
 
 .final {
