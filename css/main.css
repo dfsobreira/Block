@@ -54,6 +54,16 @@ nav a {
   line-height: 0px;
 }
 
+.textCol{
+  display: flex;
+  flex-direction: column;
+}
+
+.text-and-cube{
+  display: flex;
+  flex-direction: row;
+}
+
 .text-wrapper {
   display: block;
   position: relative;
@@ -77,10 +87,11 @@ nav a {
   margin-left: 25vh;
   color: rgba(31, 31, 31, 0.6);
   font-weight: normal;
+  width: 30vw;
 }
 
 iframe {
-  position: absolute;
+  /* position: absolute; */
   top: 15vh;
   left: 45vw;
   width: 50vw;
@@ -88,6 +99,7 @@ iframe {
 }
 
 .date {
+  padding-bottom: 20vh;
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -119,7 +131,7 @@ iframe {
   text-align: center;
 }
 
-.countdown {
+.countdownDesktop {
   display: flex;
   position: absolute;
   width: 100vw;
@@ -132,13 +144,13 @@ iframe {
   justify-content: center;
 }
 
-.countdown p {
+.countdownDesktop p {
   color: #FFFFFF;
   font-size: 4vh;
   line-height: 7vh;
 }
 
-.countdown p {
+.countdownDesktop p {
   color: #FFFFFF;
   font-size: 4vh;
   line-height: 7vh;
@@ -543,4 +555,76 @@ iframe {
 
 .social img {
   margin: 0px 2vw;
+}
+
+/* small phones */
+@media (max-width: 576px) { 
+	.text {
+		position: relative;
+		margin-left: 5vh;
+		color: rgba(76, 76, 76, 1);
+		font-size: 8vh;
+		font-weight: bold;
+		line-height: 0px;
+	}
+	
+	.textCol{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.text-and-cube{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.text-wrapper {
+		display: block;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.text-wrapper p {
+		margin: 1rem 0rem;
+	}
+	
+	.letter,
+	.letter1,
+	.letter2 {
+		display: inline-block;
+		margin: 0px;
+		line-height: 1em;
+	}
+	
+	#textof {
+		margin-top: 3vh;
+		margin-left: 5vh;
+		margin-right: 2vh;
+		color: rgba(31, 31, 31, 0.6);
+		font-weight: normal;
+		width: 80vw;
+	}
+	
+	iframe {
+		/* position: absolute; */
+		top: 0vh;
+		left: 50vw;
+		width: 100vw;
+		height: 80vh;
+		margin-top: 15vh;
+	}
+
+	.countdownDesktop {
+		display: none;
+	  }
+
+	.date {
+		margin-top: 120vh;
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		background: linear-gradient(180deg,
+			#00CCFF 0%,
+			#01A6FF 100%);
+		}
 }

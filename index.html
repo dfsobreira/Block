@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,7 +15,9 @@
   <div class="homepage">
     <nav>
       <div class="logo">
-        <img src="images/main_logo.svg" alt="">
+        <a href="index.html">
+          <img src="images/main_logo.svg" alt="">
+        </a>
       </div>
       <div class="navbar">
         <ul>
@@ -24,35 +27,43 @@
         </ul>
       </div>
     </nav>
-    <div>
-      <h1 class="text">
-        <span class="text-wrapper">
-          <p class="letters">PORTO</p>
-          <p class="letters1">BLOCKCHAIN</p>
-          <p class="letters2">CONFERENCE</p>
-        </span>
-      </h1>
-      <p id="textof">Porto.BC is for anyone who wants to learn more about<br>Blockchain technology for new projects or their jobs.</p>
+    <div class="text-and-cube">
+      <div class="textCol">
+        <h1 class="text">
+          <span class="text-wrapper">
+            <p class="letters">PORTO</p>
+            <p class="letters1">BLOCKCHAIN</p>
+            <p class="letters2">CONFERENCE</p>
+          </span>
+        </h1>
+        <p id="textof">Porto.BC is for anyone who wants to learn more about Blockchain technology for new projects or
+          their jobs.</p>
+      </div>
+      <iframe src='https://my.spline.design/testes-0952e589d2dae705283a8a3f6f126d69/' frameborder='0'></iframe>
     </div>
-    <iframe src='https://my.spline.design/testes-0952e589d2dae705283a8a3f6f126d69/' frameborder='0'></iframe>
   </div>
   <div class="date">
     <h1>February 6th and 7th</h1>
     <p>We already count the days</p>
   </div>
-  <div class="countdown">
+  <div class="countdownDesktop">
     <p id="counter"></p>
   </div>
   <div class="what">
     <h2>What is Blockchain?</h2>
-    <p>The answer is not simple, but it is also not complicated.<br>Blockchain is literally just a chain of blocks but not in the <br>traditional sense of those words. We are actually talking <br>about digital pieces of information - <b>block</b> -
-      stored in a <br>public database - <b>chain</b>. It is a protocol designed for <br>storage and digital transactions in a safe and <br>non-corruptible way.</p>
+    <p>The answer is not simple, but it is also not complicated.<br>Blockchain is literally just a chain of blocks but
+      not in the <br>traditional sense of those words. We are actually talking <br>about digital pieces of information -
+      <b>block</b> -
+      stored in a <br>public database - <b>chain</b>. It is a protocol designed for <br>storage and digital transactions
+      in a safe and <br>non-corruptible way.
+    </p>
     <div id="fact" class="fact" style="display:none">
       <h3>Fact</h3>
       <p>The global blockchain market is <br>expected to be worth $20 <br>bilion by 2024.</p>
     </div>
     <div class="animation">
-      <lottie-player id="anim" src="https://assets6.lottiefiles.com/packages/lf20_em5kn4r4/pasta sem nome/data.json" background="transparent" speed="0.7" style="width: 70rem; height: 70rem;" autoplay></lottie-player>
+      <lottie-player id="anim" src="https://assets6.lottiefiles.com/packages/lf20_em5kn4r4/pasta sem nome/data.json"
+        background="transparent" speed="0.7" style="width: 70rem; height: 70rem;" autoplay></lottie-player>
     </div>
   </div>
   <div class="pc">
@@ -61,7 +72,9 @@
   </div>
   <div class="reasons">
     <h1>7 reasons to attend Porto.BC</h1>
-    <p id="texto0">Be a part of a disruptive event that is being <br>meticulously organized in order to fulfill all <br>of your expectations, despite the adversities <br>caused by the pandemic</p>
+    <p id="texto0">Be a part of a disruptive event that is being <br>meticulously organized in order to fulfill all
+      <br>of your expectations, despite the adversities <br>caused by the pandemic
+    </p>
     <p id="texto1">Meet Blockchain experts</p>
     <p id="texto2">Develop your professional network</p>
     <p id="texto3">Invest in yourself</p>
@@ -74,8 +87,12 @@
   </div>
   <div class="about">
     <h1>About </h1>
-    <p>During two full days, we will create the perfect environment for learning <br>from amazing and skilled experts who have taken Blockchain to the next <br>level and discussing several subjects around this technology. By combining <br>talks with
-      workshops, our conference format amplifies the opportunity for <br>developing your skills.<br>We're certain that you have a lot to talk about! Share your thoughts with <br>the speakers, sponsors and the rest of the participants during the
+    <p>During two full days, we will create the perfect environment for learning <br>from amazing and skilled experts
+      who have taken Blockchain to the next <br>level and discussing several subjects around this technology. By
+      combining <br>talks with
+      workshops, our conference format amplifies the opportunity for <br>developing your skills.<br>We're certain that
+      you have a lot to talk about! Share your thoughts with <br>the speakers, sponsors and the rest of the participants
+      during the
       <br>networking moments that will be provided through the two days of the <br>event.
     </p>
     <div class="mouse">
@@ -132,13 +149,13 @@
     var can = document.getElementById('canvas1');
     var ctx = can.getContext('2d');
 
-    can.addEventListener('mousemove', function(e) {
+    can.addEventListener('mousemove', function (e) {
       var mouse = getMouse(e, can);
       redraw(mouse);
     }, false);
 
     var img = new Image();
-    img.onload = function() {
+    img.onload = function () {
       redraw({
         x: -500,
         y: -500
@@ -235,11 +252,11 @@
   </script>
   <script>
     //chart text timer
-    anim.addEventListener('play', function() {
+    anim.addEventListener('play', function () {
       var d = new Date();
       var n = d.getTime();
       console.log(d.getTime())
-      setTimeout(function() {
+      setTimeout(function () {
         $('#fact').show();
       }, 3000);
     })
@@ -251,7 +268,7 @@
     var countDownDate = new Date("February 6, 2021 00:00:00").getTime();
 
     // Update the count down every 1 second
-    var x = setInterval(function() {
+    var x = setInterval(function () {
 
       // Get today's date and time
       var now = new Date().getTime();
