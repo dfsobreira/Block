@@ -1,65 +1,63 @@
-body {
-  width: 100vw;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-  font-family: Hind;
-  font-style: normal;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
-
+body {
+  width:100vw;
+  margin      : 0px;
+  padding     : 0px;
+  overflow-x  : hidden;
+  font-family : Hind;
+  font-style  : normal;
+}
 .navbar {
-  margin-right: 5vw;
+  margin-right : 5vw;
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display         : flex;
+  align-items     : center;
+  justify-content : space-between;
 }
 
 nav ul {
-  text-align: center;
-  list-style: none;
+  text-align : center;
+  list-style : none;
 }
 
 nav li {
-  display: inline-table;
-  padding: 0 40px 0px 40px;
+  display : inline-table;
+  padding : 0 40px 0px 40px;
 }
 
 nav a {
-  display: block;
-  color: rgba(76, 76, 76, 1);
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: normal;
-  line-height: normal;
+  display         : block;
+  color           : rgba(76, 76, 76, 1);
+  text-decoration : none;
+  font-size       : 1em;
+  font-weight     : normal;
+  line-height     : normal;
 }
 
 .logo img {
-  height: 8rem;
-  margin-left: 5vw;
-}
-
-.full {
-  position: relative;
-  height: 61vh;
+  height      : 8rem;
+  margin-left : 5vw;
 }
 
 .team {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  position: relative;
+  height: fit-content;
+  width: 60vw;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
   justify-self: center;
   display: grid;
-  grid-template-columns: 55vw 15vw;
-  grid-template-rows: 8vh 40vh;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  margin:  0 auto;
+
 }
 
 .team h1 {
@@ -67,8 +65,8 @@ nav a {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 2;
-  color: rgba(76, 76, 76, 1);
+ grid-row-end: 2;
+  color       : rgba(76, 76, 76, 1);
 }
 
 .team p {
@@ -77,80 +75,88 @@ nav a {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  color: rgba(76, 76, 76, 1);
+  color       : rgba(76, 76, 76, 1);
 }
-
-.team img {
+.team img{
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  place-self: center;
+  grid-row-start:1;
+ grid-row-end: 3;
+ place-self: center;
+
 }
 
+
 .final {
+  clear: both;
+  justify-items: center;
+  text-align: left;
   position: relative;
   width: 100vw;
-  height: 25vh;
   background-color: #F0F0F3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40% 60%;
   color: rgba(76, 76, 76, 1);
 }
-
-.contacts {
-  place-self: center;
+.column1{
+  display: flex;
+  flex-direction:column;
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
-
-.textc {
-  place-self: center;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.organizer {
-  place-self: center;
+.column2{
+  display: flex;
+  flex-direction:column;
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
-
-.link {
-  place-self: center;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.column2 img{
+margin-top: 3vh;
 }
-
-.conect {
-  place-self: center;
+.column3{
+  display: flex;
+  flex-direction:column;
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+}
+.column3 img{
+margin-top: 4vh;
 }
 
-.social {
-  place-self: center;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
 
 .social a {
   text-decoration: none;
 }
 
-.social img {
-  margin: 0px 2vw;
+.last{
+  margin:0vw  2vw;
+}
+@media (max-width: 576px) {
+
+  .team{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  }
+  .team h1{
+width: 50%;
+padding-left: 3vw;
+
+  }
+  .team p{
+width: 90%;
+margin: auto;
+padding-left: 3vw;
+margin-bottom: 15vw;
+  }
+  .team img{
+    margin-bottom: 15vw;
+  }
+.final{
+  display: flex;
+  flex-direction: column;
+  padding-left: 4vw;
+
+}
 }
