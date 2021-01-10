@@ -48,8 +48,9 @@ nav a {
 }
 
 .accordion {
+  font-size: 1rem;
   padding: 0px;
-  height: 8vh;
+  height: 10vh;
   background-color: #FFFFFF;
   color: rgba(31, 31, 31, 0.8);
   cursor: pointer;
@@ -78,68 +79,61 @@ nav a {
 }
 
 .final {
+  clear: both;
+  justify-items: center;
+  text-align: left;
   position: relative;
   width: 100vw;
-  height: 25vh;
   background-color: #F0F0F3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40% 60%;
   color: rgba(76, 76, 76, 1);
 }
-
-.contacts {
-  place-self: center;
+.column1{
+  display: flex;
+  flex-direction:column;
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
-
-.textc {
-  place-self: center;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.organizer {
-  place-self: center;
+.column2{
+  display: flex;
+  flex-direction:column;
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
-
-.link {
-  place-self: center;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.column2 img{
+margin-top: 3vh;
 }
-
-.conect {
-  place-self: center;
+.column3{
+  display: flex;
+  flex-direction:column;
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+}
+.column3 img{
+margin-top: 4vh;
 }
 
-.social {
-  place-self: center;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
 
 .social a {
   text-decoration: none;
 }
 
-.social img {
-  margin: 0px 2vw;
+.last{
+  margin:0vw  2vw;
+}
+@media (max-width: 576px) {
+
+.accordion{
+  height: 12vh;
+  margin-bottom: 0vh;
+}
+.faq{
+  width: 90%;
+}
+.final{
+  display: flex;
+  flex-direction: column;
+  padding-left: 4vw;
+}
 }

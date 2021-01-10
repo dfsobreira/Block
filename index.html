@@ -29,20 +29,15 @@
     </nav>
     <div class="text-and-cube">
       <div class="textCol">
-        <h1 class="text">
-          <span class="text-wrapper">
-            <p class="letters">PORTO</p>
-            <p class="letters1">BLOCKCHAIN</p>
-            <p class="letters2">CONFERENCE</p>
-          </span>
-        </h1>
-        <p id="textof">Porto.BC is for anyone who wants to learn more about Blockchain technology for new projects or
-          their jobs.</p>
-      </div>
+      <div class="text">
+         <h1>PORTO<br>BLOCKCHAIN<br>CONFERENCE</h1>
+         <p>Porto.BC is for anyone who wants to learn more<br>about Blockchain technology for new projects or their jobs.</p>
+       </div>
+       </div>
       <iframe src='https://my.spline.design/testes-0952e589d2dae705283a8a3f6f126d69/' frameborder='0'></iframe>
     </div>
   </div>
-  <div class="date">
+  <div class="data">
     <h1>February 6th and 7th</h1>
     <p>We already count the days</p>
   </div>
@@ -57,7 +52,7 @@
       stored in a <br>public database - <b>chain</b>. It is a protocol designed for <br>storage and digital transactions
       in a safe and <br>non-corruptible way.
     </p>
-    <div id="fact" class="fact" style="display:none">
+    <div id="fact" class="fact" >
       <h3>Fact</h3>
       <p>The global blockchain market is <br>expected to be worth $20 <br>bilion by 2024.</p>
     </div>
@@ -114,13 +109,16 @@
       <input type="text" placeholder="Insira o seu e-mail" name="email" id="email" required>
     </div>
   </div>
-  <div class="final">
-    <div class="contacts">
-      <h3>Contacts</h3>
+  <footer class="final">
+    <div class="column1">
+      <div class="contacts">
+        <h3>Contacts</h3>
+      </div>
+      <div class="textc">
+        <p>geral@portobc.com <br>+351 926 590 223 <br>+351 919 818 111</p>
+      </div>
     </div>
-    <div class="textc">
-      <p>geral@portobc.com <br>+351 926 590 223 <br>+351 919 818 111</p>
-    </div>
+  <div class="column2">
     <div class="organizer">
       <h3>Organizer</h3>
     </div>
@@ -129,21 +127,24 @@
         <img src="images/jek.svg">
       </a>
     </div>
-    <div class="conect">
-      <h3>Connect with us!</h3>
-    </div>
-    <div class="social">
-      <a href="https://jeknowledge.pt/">
-        <img src="images/facebook.svg">
-      </a>
-      <a href="">
-        <img src="images/linked.svg">
-      </a>
-      <a href="">
-        <img src="images/insta.svg">
-      </a>
-    </div>
   </div>
+    <div class="column3">
+      <div class="conect">
+        <h3>Connect with us!</h3>
+      </div>
+      <div class="social">
+        <a href="https://jeknowledge.pt/">
+          <img  src="images/facebook.svg">
+        </a>
+        <a href="">
+          <img class="last" src="images/linked.svg">
+        </a>
+        <a href="">
+          <img class="last" src="images/insta.svg">
+        </a>
+      </div>
+    </div>
+  </footer>
   <script>
     //flashligth effect
     var can = document.getElementById('canvas1');
@@ -204,62 +205,10 @@
       };
     }
   </script>
-  <script>
-    //letters animation atempt
-    // Wrap every letter in a span
-    var textWrapper = document.querySelector('.text .letters');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-    anime.timeline()
-      .add({
-        targets: '.text .letter',
-        scale: [0, 1],
-        opacity: [0, 1],
-        easing: "easeOutExpo",
-        duration: 950,
-        delay: (el, i) => 70 * i
-      });
-    var textWrapper1 = document.querySelector('.text .letters1');
-    textWrapper1.innerHTML = textWrapper1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-    anime.timeline()
-      .add({
-        targets: '.text .letter',
-        scale: [0, 1],
-        opacity: [0, 1],
-        easing: "easeOutExpo",
-        duration: 950,
-        delay: (el, i) => 70 * i
-      });
-
-    var textWrapper2 = document.querySelector('.text .letters2');
-    textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-    anime.timeline()
-      .add({
-        targets: '.text .letter',
-        scale: [0, 1],
-        opacity: [0, 1],
-        easing: "easeOutExpo",
-        duration: 950,
-        delay: (el, i) => 70 * i
-      });
-  </script>
   <script src="images/parallax.min.js"></script>
   <script>
     var scene = document.getElementById('scene');
     var parallaxInstance = new Parallax(scene);
-  </script>
-  <script>
-    //chart text timer
-    anim.addEventListener('play', function () {
-      var d = new Date();
-      var n = d.getTime();
-      console.log(d.getTime())
-      setTimeout(function () {
-        $('#fact').show();
-      }, 3000);
-    })
   </script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script>

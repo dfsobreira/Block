@@ -1,3 +1,7 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
   width: 100vw;
   margin: 0px;
@@ -47,14 +51,19 @@ nav a {
 
 .text {
   position: relative;
-  margin-left: 25vh;
+  margin-left: 12vw;
   color: rgba(76, 76, 76, 1);
-  font-size: 10vh;
   font-weight: bold;
-  line-height: 0px;
 }
-
+.text h1{
+  font-size: 10vh;
+  line-height: 70px;
+}
+.text p{
+  padding-top: 10vh;
+}
 .textCol{
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -64,23 +73,6 @@ nav a {
   flex-direction: row;
 }
 
-.text-wrapper {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-.text-wrapper p {
-  margin: 1rem 0rem;
-}
-
-.letter,
-.letter1,
-.letter2 {
-  display: inline-block;
-  margin: 0px;
-  line-height: 1em;
-}
 
 #textof {
   margin-top: 15vh;
@@ -91,27 +83,26 @@ nav a {
 }
 
 iframe {
-  /* position: absolute; */
   top: 15vh;
   left: 45vw;
   width: 50vw;
   height: 80vh;
 }
 
-.date {
-  padding-bottom: 20vh;
+.data {
   position: relative;
   width: 100vw;
   height: 100vh;
   background: linear-gradient(180deg,
       #00CCFF 0%,
       #01A6FF 100%);
+      display: flex;
+      flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.date h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.data h1 {
   margin: 0px;
   color: #FFFFFF;
   text-align: center;
@@ -119,11 +110,9 @@ iframe {
   font-size: 5rem;
   font-weight: bold;
   justify-content: center;
-  transform: translate(-50%, -50%);
 }
 
-.date p {
-  position: absolute;
+.data p {
   bottom: 6%;
   width: 100vw;
   margin: 0vh;
@@ -133,7 +122,6 @@ iframe {
 
 .countdownDesktop {
   display: flex;
-  position: absolute;
   width: 100vw;
   height: 25%;
   margin: 0vh;
@@ -491,103 +479,76 @@ iframe {
 }
 
 .final {
+  clear: both;
+  justify-items: center;
+  text-align: left;
   position: relative;
   width: 100vw;
-  height: 25vh;
   background-color: #F0F0F3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40% 60%;
   color: rgba(76, 76, 76, 1);
 }
-
-.contacts {
-  place-self: center;
+.column1{
+  display: flex;
+  flex-direction:column;
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
-
-.textc {
-  place-self: center;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.organizer {
-  place-self: center;
+.column2{
+  display: flex;
+  flex-direction:column;
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
-
-.link {
-  place-self: center;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.column2 img{
+margin-top: 3vh;
 }
-
-.conect {
-  place-self: center;
+.column3{
+  display: flex;
+  flex-direction:column;
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+}
+.column3 img{
+margin-top: 4vh;
 }
 
-.social {
-  place-self: center;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
 
 .social a {
   text-decoration: none;
 }
 
-.social img {
-  margin: 0px 2vw;
+.last{
+  margin-left:2vw;
 }
-
 /* small phones */
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
 	.text {
 		position: relative;
-		margin-left: 5vh;
+		margin-left: 1vw;
 		color: rgba(76, 76, 76, 1);
-		font-size: 8vh;
 		font-weight: bold;
-		line-height: 0px;
 	}
-	
-	.textCol{
+  .text h1{
+    font-size: 16vw;
+    line-height: 9vh;
+  }
+  .text p{
+    margin: 0px;
+    padding-top: 0px;
+  }
+  .textCol{
+    width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 	.text-and-cube{
 		display: flex;
 		flex-direction: column;
 	}
-	
-	.text-wrapper {
-		display: block;
-		position: relative;
-		overflow: hidden;
-	}
-	
-	.text-wrapper p {
-		margin: 1rem 0rem;
-	}
-	
+
 	.letter,
 	.letter1,
 	.letter2 {
@@ -595,7 +556,7 @@ iframe {
 		margin: 0px;
 		line-height: 1em;
 	}
-	
+
 	#textof {
 		margin-top: 3vh;
 		margin-left: 5vh;
@@ -604,7 +565,7 @@ iframe {
 		font-weight: normal;
 		width: 80vw;
 	}
-	
+
 	iframe {
 		/* position: absolute; */
 		top: 0vh;
@@ -618,7 +579,7 @@ iframe {
 		display: none;
 	  }
 
-	.date {
+	.data {
 		margin-top: 120vh;
 		position: relative;
 		width: 100vw;
@@ -627,4 +588,10 @@ iframe {
 			#00CCFF 0%,
 			#01A6FF 100%);
 		}
+    .final{
+      display: flex;
+      flex-direction: column;
+      padding-left: 4vw;
+
+    }
 }
