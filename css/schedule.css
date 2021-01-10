@@ -53,6 +53,48 @@ nav a {
   grid-template-columns: 2fr 3fr;
   grid-template-rows:  1fr ;
 }
+
+.full h1{
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 77px;
+  color: #4C4C4C;
+}
+.schedule p{
+font-family: Hind;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 22px;
+color: #4C4C4C;
+}
+
+#myBtn1 p{
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+#myBtn2 p{
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.full a{
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+
+color: #4C4C4C;
+}
 .schedule{
   margin-left: auto;
   margin-right: auto;
@@ -70,11 +112,29 @@ nav a {
   grid-row-end: 2;
 
 }
+
+.days h3{
+    font-family: Hind;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.opac{
+  color: rgba(31, 31, 31, 0.6);
+}
+
+.opac2{
+  color: rgba(31, 31, 31, 0.4);
+}
+
 .gradient{
   background: linear-gradient(270deg, #00DFFD 4%, #00AEFF 34.76%, #B56DF5 65.33%, #6F0BDA 96.28%);
   background-size: 100% 2px;
   background-position: bottom;
   background-repeat: no-repeat;
+  color: rgba(31, 31, 31, 0.8);
 }
 
 .myBtn2{
@@ -88,96 +148,192 @@ nav a {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(31, 31, 31, 0.6);
 }
 #hora2{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end:4 ;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(31, 31, 31, 0.6);
 }
 #hora3{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 4;
   grid-row-end:5 ;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(31, 31, 31, 0.6);
 }
 #hora4{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 5;
   grid-row-end:6;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(31, 31, 31, 0.6);
 }
 #hora5{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 6;
   grid-row-end:7;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(31, 31, 31, 0.6);
 }
 #hora6{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 7;
   grid-row-end:8;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(31, 31, 31, 0.6);
 }
 #hora7{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 8;
   grid-row-end:9;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(31, 31, 31, 0.6);
 }
 #hora8{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 9;
   grid-row-end:10;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(31, 31, 31, 0.6);
 }
 #texto1{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #4C4C4C;
 }
 #texto2{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end:4 ;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #4C4C4C;
 }
 #texto3{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 4;
   grid-row-end:5 ;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #4C4C4C;
 }
 #texto4{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 5;
   grid-row-end:6;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #4C4C4C;
 }
 #texto5{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 6;
   grid-row-end:7;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #4C4C4C;
 }
 #texto6{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 7;
   grid-row-end:8;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #4C4C4C;
 }
 #texto7{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 8;
   grid-row-end:9;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #4C4C4C;
 }
 #texto8{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 9;
   grid-row-end:10;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #4C4C4C;
 }
 
 .final {
