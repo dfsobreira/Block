@@ -22,20 +22,31 @@
         <li><a href="team.html">TEAM</a></li>
       </ul>
     </div>
+    <button class="ham">
+      <img src="images/hamburguer.svg" alt="hamburguer" />
+    </button>
+    <nav class="content">
+      <ul>
+        <li><a href="schedule.html">SCHEDULE</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="team.html">TEAM</a></li>
+      </ul>
+    </nav>
+
   </nav>
   <main>
-      <div class="team">
-        <h1>Team </h1>
-        <p>The team behind the organization of this event is jeKnowledge! We are a <br>junior enterprise from Coimbra,
-          which hold events and provide solutions <br>on Web and Mobile Development, Hardware, Design,
-          Multimedia,<br>Marketing, Filmmaking,
-          and Communication. jeKnowlegde is entirely <br>formed by students from the area of Science and Technology with
-          the <br>ambition to go further and believes that that step is given through real <br>projects, for real
-          clients.<br>Since 2008,
-          jeKnowledge has grown, and this year was distinguished as <br>the most promising junior company in Europe! The
-          best way to understand <br>what jeKnowledge does? Experience it yourself!</p>
-        <img id="dots" src="images/team.svg" alt="">
-      </div>
+    <div class="team">
+      <h1>Team </h1>
+      <p>The team behind the organization of this event is jeKnowledge! We are a <br>junior enterprise from Coimbra,
+        which hold events and provide solutions <br>on Web and Mobile Development, Hardware, Design,
+        Multimedia,<br>Marketing, Filmmaking,
+        and Communication. jeKnowlegde is entirely <br>formed by students from the area of Science and Technology with
+        the <br>ambition to go further and believes that that step is given through real <br>projects, for real
+        clients.<br>Since 2008,
+        jeKnowledge has grown, and this year was distinguished as <br>the most promising junior company in Europe! The
+        best way to understand <br>what jeKnowledge does? Experience it yourself!</p>
+      <img id="dots" src="images/team.svg" alt="">
+    </div>
   </main>
   <footer class="final">
     <div class="column1">
@@ -46,23 +57,23 @@
         <p>geral@portobc.com <br>+351 926 590 223 <br>+351 919 818 111</p>
       </div>
     </div>
-  <div class="column2">
-    <div class="organizer">
-      <h3>Organizer</h3>
+    <div class="column2">
+      <div class="organizer">
+        <h3>Organizer</h3>
+      </div>
+      <div class="link">
+        <a href="https://jeknowledge.pt/">
+          <img src="images/jek.svg">
+        </a>
+      </div>
     </div>
-    <div class="link">
-      <a href="https://jeknowledge.pt/">
-        <img src="images/jek.svg">
-      </a>
-    </div>
-  </div>
     <div class="column3">
       <div class="conect">
         <h3>Connect with us!</h3>
       </div>
       <div class="social">
         <a href="https://jeknowledge.pt/">
-          <img  src="images/facebook.svg">
+          <img src="images/facebook.svg">
         </a>
         <a href="">
           <img class="last" src="images/linked.svg">
@@ -74,5 +85,27 @@
     </div>
   </footer>
 </body>
+<script>
+  var content = document.querySelector(".content")
+  var ham = document.querySelector(".ham")
+
+  // toggles hamburger menu in and out when clicking on the hamburger
+  function toggleHamburger() {
+    content.classList.toggle("showNav")
+    ham.classList.toggle("showClose")
+  }
+
+  ham.addEventListener("click", toggleHamburger)
+
+  // toggle when clicking on links
+
+  // METHOD 1
+  var menuLinks = document.querySelectorAll(".menuLink")
+  menuLinks.forEach(
+    function (menuLink) {
+      menuLink.addEventListener("click", toggleHamburger)
+    }
+  )
+</script>
 
 </html>
