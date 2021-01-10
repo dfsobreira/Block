@@ -26,14 +26,27 @@
           <li><a href="team.html">TEAM</a></li>
         </ul>
       </div>
+      <button class="ham">
+        <img src="images/hamburguer.svg" alt="hamburguer" />
+      </button>
+      <nav class="content">
+        <ul>
+          <li><a href="schedule.html">SCHEDULE</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="team.html">TEAM</a></li>
+        </ul>
+      </nav>
+
     </nav>
+
     <div class="text-and-cube">
       <div class="textCol">
-      <div class="text">
-         <h1>PORTO<br>BLOCKCHAIN<br>CONFERENCE</h1>
-         <p>Porto.BC is for anyone who wants to learn more<br>about Blockchain technology for new projects or their jobs.</p>
-       </div>
-       </div>
+        <div class="text">
+          <h1>PORTO<br>BLOCKCHAIN<br>CONFERENCE</h1>
+          <p>Porto.BC is for anyone who wants to learn more<br>about Blockchain technology for new projects or their
+            jobs.</p>
+        </div>
+      </div>
       <iframe src='https://my.spline.design/testes-0952e589d2dae705283a8a3f6f126d69/' frameborder='0'></iframe>
     </div>
   </div>
@@ -46,13 +59,14 @@
   </div>
   <div class="what">
     <h2>What is Blockchain?</h2>
-    <p>The answer is not simple, but it is also not complicated.<br>Blockchain is literally just a chain of blocks but
+    <p id="blockchain-what">The answer is not simple, but it is also not complicated.<br>Blockchain is literally just a
+      chain of blocks but
       not in the <br>traditional sense of those words. We are actually talking <br>about digital pieces of information -
       <b>block</b> -
       stored in a <br>public database - <b>chain</b>. It is a protocol designed for <br>storage and digital transactions
       in a safe and <br>non-corruptible way.
     </p>
-    <div id="fact" class="fact" >
+    <div id="fact" class="fact">
       <h3>Fact</h3>
       <p>The global blockchain market is <br>expected to be worth $20 <br>bilion by 2024.</p>
     </div>
@@ -68,7 +82,7 @@
   <div class="reasons">
     <h1>7 reasons to attend Porto.BC</h1>
     <p id="texto0">Be a part of a disruptive event that is being <br>meticulously organized in order to fulfill all
-      <br>of your expectations, despite the adversities <br>caused by the pandemic
+      <br>of your expectations, despite the adversities <br>caused by the pandemic.
     </p>
     <p id="texto1">Meet Blockchain experts</p>
     <p id="texto2">Develop your professional network</p>
@@ -118,23 +132,23 @@
         <p>geral@portobc.com <br>+351 926 590 223 <br>+351 919 818 111</p>
       </div>
     </div>
-  <div class="column2">
-    <div class="organizer">
-      <h3>Organizer</h3>
+    <div class="column2">
+      <div class="organizer">
+        <h3>Organizer</h3>
+      </div>
+      <div class="link">
+        <a href="https://jeknowledge.pt/">
+          <img src="images/jek.svg">
+        </a>
+      </div>
     </div>
-    <div class="link">
-      <a href="https://jeknowledge.pt/">
-        <img src="images/jek.svg">
-      </a>
-    </div>
-  </div>
     <div class="column3">
       <div class="conect">
         <h3>Connect with us!</h3>
       </div>
       <div class="social">
         <a href="https://jeknowledge.pt/">
-          <img  src="images/facebook.svg">
+          <img src="images/facebook.svg">
         </a>
         <a href="">
           <img class="last" src="images/linked.svg">
@@ -241,6 +255,28 @@
         document.getElementById("counter").innerHTML = "EXPIRED";
       }
     }, 1000);
+  </script>
+  <script>
+    var content = document.querySelector(".content")
+    var ham = document.querySelector(".ham")
+
+    // toggles hamburger menu in and out when clicking on the hamburger
+    function toggleHamburger() {
+      content.classList.toggle("showNav")
+      ham.classList.toggle("showClose")
+    }
+
+    ham.addEventListener("click", toggleHamburger)
+
+    // toggle when clicking on links
+
+    // METHOD 1
+    var menuLinks = document.querySelectorAll(".menuLink")
+    menuLinks.forEach(
+      function (menuLink) {
+        menuLink.addEventListener("click", toggleHamburger)
+      }
+    )
   </script>
 </body>
 
