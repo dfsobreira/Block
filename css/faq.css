@@ -46,6 +46,9 @@ nav a {
   width: 50%;
   margin-bottom: 10vh;
 }
+.faq h1{
+color: #4C4C4C
+}
 
 .accordion {
   font-size: 1rem;

@@ -82,7 +82,7 @@ nav a {
   grid-column-end: 3;
   grid-row-start:1;
  grid-row-end: 3;
- place-self: center;
+ padding: 17vh 2vw 0vh;
 
 }
 
@@ -145,6 +145,8 @@ margin-top: 4vh;
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-bottom: 10vh;
+
 
   }
   .team h1{
