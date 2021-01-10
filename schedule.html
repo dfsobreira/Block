@@ -35,40 +35,52 @@
     </div>
     <div class="days">
       <div class="myBtn1">
-        <a onclick="myFunction()" id="myBtn1">
+        <a onclick="replace1()" id="myBtn1">
           <h3>Day 01</h3>
         </a>
         <p id="myBtn1">Sat, February 06</p>
       </div>
       <div class="myBtn2">
-        <a onclick="myFunction()" id="myBtn2">
+        <a onclick="replace2()" id="myBtn2">
           <h3>Day 02</h3>
         </a>
         <p id="myBtn2">Sun, February 07</p>
       </div>
-      <p id="hora1">10:30 AM</p>
-      <p id="hora2">11:15 AM</p>
-      <p id="hora3">12:00 AM</p>
-      <p id="hora4">12:30 AM</p>
-      <p id="hora5">13:00 PM</p>
-      <p id="hora6">14:30 PM</p>
-      <p id="hora7">15:15 PM</p>
-      <p id="hora8">17:00 PM</p>
-      <p id="texto1">Blockchain 101 - The first talk you need to attend!<br>Marco Carvalho</p>
-      <p id="texto2">Blockchain, businesses, and smart cities: from concept to application <br>Josina Rodrigues</p>
-      <p id="texto3">Blockchains and distributed systems: the bridge between concepts and practice
-        <br>Rodrigo Miragaia
-        Rodrigues
-      </p>
+        <p style="display:block" class="day1" id="hora1">10:30 AM</p>
+        <p style="display:block" class="day1" id="hora2">11:15 AM</p>
+        <p style="display:block" class="day1" id="hora3">12:00 AM</p>
+        <p style="display:block" class="day1" id="hora4">12:30 AM</p>
+        <p style="display:block" class="day1" id="hora5">13:00 PM</p>
+        <p style="display:block" class="day1" id="hora6">14:30 PM</p>
+        <p style="display:block" class="day1" id="hora7">15:15 PM</p>
+        <p style="display:block" class="day1" id="hora8">17:00 PM</p>
+        <p style="display:block" class="day1" id="texto1">Blockchain 101 - The first talk you need to attend!<br>Marco Carvalho</p>
+        <p style="display:block" class="day1" id="texto2">Blockchain, businesses, and smart cities: from concept to application <br>Josina Rodrigues</p>
+        <p style="display:block" class="day1" id="texto3">Blockchains and distributed systems: the bridge between concepts and practice<br>Rodrigo Miragaia  Rodrigues</p>
+        <p style="display:block" class="day1" id="texto4">Networking Moment</p>
+        <p style="display:block" class="day1" id="texto5">Lunch</p>
+        <p style="display:block" class="day1" id="texto6">Blockchain in Financial Services <br>Paulo Rodrigues</p>
+        <p style="display:block" class="day1" id="texto7">Workshops</p>
+        <p style="display:block" class="day1" id="texto8">Session 4: Law and Blockchain <br>Nuno Lima da Luz</p>
 
-      <p id="texto3">Blockchains and distributed systems: the bridge between concepts and practice <br>Rodrigo
-        Miragaia Rodrigues</p>
 
-      <p id="texto4">Networking Moment</p>
-      <p id="texto5">Lunch</p>
-      <p id="texto6">Blockchain in Financial Services <br>Paulo Rodrigues</p>
-      <p id="texto7">Workshops</p>
-      <p id="texto8">Session 4: Law and Blockchain <br>Nuno Lima da Luz</p>
+        <p style="display:none" class="day2" id="hora1">10:30 AM</p>
+        <p style="display:none" class="day2" id="hora2">11:15 AM</p>
+        <p style="display:none" class="day2" id="hora3">13:00 PM</p>
+        <p style="display:none" class="day2" id="hora4">14:30 PM</p>
+        <p style="display:none" class="day2" id="hora5">15:15 PM</p>
+        <p style="display:none" class="day2" id="hora6">16:00 PM</p>
+        <p style="display:none" class="day2" id="hora7">16:30 PM</p>
+        <p style="display:none" class="day2" id="hora8">17:15 PM</p>
+        <p style="display:none" class="day2" id="texto1">Incentives - How Blockchain can shape our lives <br>Gonçalo Sá</p>
+        <p style="display:none" class="day2" id="texto2">Workshops</p>
+        <p style="display:none" class="day2" id="texto3">Lunch </p>
+        <p style="display:none" class="day2" id="texto4">Session 6: Decentralized autonomous organizations <br>José Pereira</p>
+        <p style="display:none" class="day2" id="texto5">The Sustainability needs Decentralization <br>Fernando Lobo</p>
+        <p style="display:none" class="day2" id="texto6">Networking Moment</p>
+        <p style="display:none" class="day2" id="texto7">Play-to-Earn: Blockchain & Gaming <br>Miguel Gomes</p>
+        <p style="display:none" class="day2" id="texto8">Closing keynote <br>Nuno Cortesão</p>
+
     </div>
 
   </div>
@@ -109,6 +121,16 @@
     </div>
   </footer>
 </body>
+<script>
+function replace1() {
+    document.getElementsByClassName("day1")[0].style.display="none";
+    document.getElementsByClassName("day2")[0].style.display="block";
+}
+function replace2() {
+    document.getElementsByClassName("day1")[0].style.display="block";
+    document.getElementsByClassName("day2")[0].style.display="none";
+}
+</script>
 <script>
   function myFunction() {
     var dots = document.getElementById("dots");
