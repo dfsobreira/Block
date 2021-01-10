@@ -47,15 +47,15 @@
     <div class="days">
       <div class="myBtn1 gradient">
         <a onclick="replace2()" id="myBtn1">
-          <h3>Day 01</h3>
+          <h3 class ="btn1" >Day 01</h3>
         </a>
-        <p id="myBtn1">Sat, February 06</p>
+        <p id="myBtn1" class="btn1p">Sat, February 06</p>
       </div>
       <div class="myBtn2">
         <a onclick="replace1()" id="myBtn2">
-          <h3>Day 02</h3>
+          <h3 class ="btn2 opac" >Day 02</h3>
         </a>
-        <p id="myBtn2">Sun, February 07</p>
+        <p id="myBtn2" class="btn2p opac2">Sun, February 07</p>
       </div>
         <p style="display:block" class="day1" id="hora1">10:30 AM</p>
         <p style="display:block" class="day1" id="hora2">11:15 AM</p>
@@ -142,6 +142,10 @@ function replace1() {
   }
   document.querySelector(".myBtn1").classList.remove("gradient")
   document.querySelector(".myBtn2").classList.add("gradient")
+  document.querySelector(".btn2").classList.remove("opac")
+  document.querySelector(".btn1").classList.add("opac")
+  document.querySelector(".btn2p").classList.remove("opac2")
+  document.querySelector(".btn1p").classList.add("opac2")
 
 }
 function replace2() {
@@ -153,6 +157,10 @@ function replace2() {
   }
   document.querySelector(".myBtn2").classList.remove("gradient")
   document.querySelector(".myBtn1").classList.add("gradient")
+  document.querySelector(".btn1").classList.remove("opac")
+  document.querySelector(".btn2").classList.add("opac")
+  document.querySelector(".btn1p").classList.remove("opac2")
+  document.querySelector(".btn2p").classList.add("opac2")
 }
 </script>
 <script>
