@@ -68,6 +68,9 @@ nav a {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+
+}
+.gradient{
   background: linear-gradient(270deg, #00DFFD 4%, #00AEFF 34.76%, #B56DF5 65.33%, #6F0BDA 96.28%);
   background-size: 100% 2px;
   background-position: bottom;

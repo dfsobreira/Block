@@ -45,14 +45,14 @@
       <a onclick="myFunction()" id="myBtn">Learn more</a>
     </div>
     <div class="days">
-      <div class="myBtn1">
-        <a onclick="replace1()" id="myBtn1">
+      <div class="myBtn1 gradient">
+        <a onclick="replace2()" id="myBtn1">
           <h3>Day 01</h3>
         </a>
         <p id="myBtn1">Sat, February 06</p>
       </div>
       <div class="myBtn2">
-        <a onclick="replace2()" id="myBtn2">
+        <a onclick="replace1()" id="myBtn2">
           <h3>Day 02</h3>
         </a>
         <p id="myBtn2">Sun, February 07</p>
@@ -134,12 +134,25 @@
 </body>
 <script>
 function replace1() {
-    document.getElementsByClassName("day1")[0].style.display="none";
-    document.getElementsByClassName("day2")[0].style.display="block";
+  for (let day of document.getElementsByClassName("day1")) {
+    day.style.display="none";
+  }
+  for (let day of document.getElementsByClassName("day2")) {
+    day.style.display="block";
+  }
+  document.querySelector(".myBtn1").classList.remove("gradient")
+  document.querySelector(".myBtn2").classList.add("gradient")
+
 }
 function replace2() {
-    document.getElementsByClassName("day1")[0].style.display="block";
-    document.getElementsByClassName("day2")[0].style.display="none";
+  for (let day of document.getElementsByClassName("day1")) {
+    day.style.display="block";
+  }
+  for (let day of document.getElementsByClassName("day2")) {
+    day.style.display="none";
+  }
+  document.querySelector(".myBtn2").classList.remove("gradient")
+  document.querySelector(".myBtn1").classList.add("gradient")
 }
 </script>
 <script>
