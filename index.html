@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -47,7 +48,8 @@
             jobs.</p>
         </div>
       </div>
-      <iframe src='https://my.spline.design/testes-0952e589d2dae705283a8a3f6f126d69/' frameborder='0'></iframe>
+      <iframe class="cubo" src='https://my.spline.design/testes-0952e589d2dae705283a8a3f6f126d69/' frameborder='0'></iframe>
+      <img class="cubom" src="images/cubem.png" alt="">
     </div>
   </div>
   <div class="data">
@@ -57,32 +59,34 @@
   <div class="countdownDesktop">
     <p id="counter"></p>
   </div>
-  <div class="what">
-    <h2>What is Blockchain?</h2>
-    <p id="blockchain-what">The answer is not simple, but it is also not complicated.<br>Blockchain is literally just a
-      chain of blocks but
-      not in the <br>traditional sense of those words. We are actually talking <br>about digital pieces of information -
-      <b>block</b> -
-      stored in a <br>public database - <b>chain</b>. It is a protocol designed for <br>storage and digital transactions
-      in a safe and <br>non-corruptible way.
-    </p>
+  <div class="total-what">
+    <div class="what">
+      <h2>What is Blockchain?</h2>
+      <p id="blockchain-what">The answer is not simple, but it is also not complicated. Blockchain is literally just a
+        chain of blocks but
+        not in the traditional sense of those words. We are actually talking about digital pieces of information -
+        <b>block</b> -
+        stored in a public database - <b>chain</b>. It is a protocol designed for storage and digital transactions
+        in a safe and non-corruptible way.
+      </p>
+      <div class="animation">
+        <lottie-player id="anim" src="https://assets6.lottiefiles.com/packages/lf20_em5kn4r4/pasta sem nome/data.json"
+          background="transparent" speed="0.9" style="width: 70rem; height: 70rem;" autoplay></lottie-player>
+      </div>
+    </div>
     <div id="fact" class="fact">
       <h3>Fact</h3>
-      <p>The global blockchain market is <br>expected to be worth $20 <br>bilion by 2024.</p>
-    </div>
-    <div class="animation">
-      <lottie-player id="anim" src="https://assets6.lottiefiles.com/packages/lf20_em5kn4r4/pasta sem nome/data.json"
-        background="transparent" speed="0.7" style="width: 70rem; height: 70rem;" autoplay></lottie-player>
+      <p>The global blockchain market is expected to be worth $20 bilion by 2024.</p>
     </div>
   </div>
+
   <div class="pc">
     <h1>We’re going remote!</h1>
-    <img src="images/mac.svg" alt="">
+    <img src="images/mac.png" alt="">
   </div>
   <div class="reasons">
     <h1>7 reasons to attend Porto.BC</h1>
-    <p id="texto0">Be a part of a disruptive event that is being <br>meticulously organized in order to fulfill all
-      <br>of your expectations, despite the adversities <br>caused by the pandemic.
+    <p id="texto0">Be a part of a disruptive event that is being meticulously organized in order to fulfill all of your expectations, despite the adversities caused by the pandemic.
     </p>
     <p id="texto1">Meet Blockchain experts</p>
     <p id="texto2">Develop your professional network</p>
@@ -95,15 +99,16 @@
     </div>
   </div>
   <div class="about">
-    <h1>About </h1>
-    <p>During two full days, we will create the perfect environment for learning <br>from amazing and skilled experts
-      who have taken Blockchain to the next <br>level and discussing several subjects around this technology. By
-      combining <br>talks with
-      workshops, our conference format amplifies the opportunity for <br>developing your skills.<br>We're certain that
-      you have a lot to talk about! Share your thoughts with <br>the speakers, sponsors and the rest of the participants
-      during the
-      <br>networking moments that will be provided through the two days of the <br>event.
-    </p>
+    <div class="aboutt">
+      <h1>About </h1>
+      <p>During two full days, we will create the perfect environment for learning from amazing and skilled experts
+        who have taken Blockchain to the next level and discussing several subjects around this technology. By
+        combining talks with
+        workshops, our conference format amplifies the opportunity for developing your skills. We're certain that
+        you have a lot to talk about! Share your thoughts with the speakers, sponsors and the rest of the participants
+        during the networking moments that will be provided through the two days of the event.
+      </p>
+    </div>
     <div class="mouse">
       <img id="dots" src="images/dots.svg" alt="">
       <ul id="scene" class="scene" data-hover-only="true" data-relative-input="true">
@@ -112,17 +117,16 @@
     </div>
   </div>
   <div class="scroller">
-    <div class="rolling">
       <h1>You don’t want to miss any news</h1>
-    </div>
     <canvas id="canvas1" width="770" height="771" align="right"></canvas>
+    <img class="dotsm" src="images/dotsm.png">
   </div>
-  <div class="form">
+  <form  class="form">
     <p>Subscribe to get first-hand news about <br> Porto Blockchain Conference!</p>
     <div class="submiter">
       <input type="text" placeholder="Insira o seu e-mail" name="email" id="email" required>
     </div>
-  </div>
+  </form>
   <footer class="final">
     <div class="column1">
       <div class="contacts">
@@ -159,6 +163,24 @@
       </div>
     </div>
   </footer>
+  <script>
+  $("#emal").keypress(function(e) {
+  if(e.keyCode == 13) {
+    $.ajax({
+      url:"https://api.apispreadsheets.com/data/6257/",
+				type:"post",
+				data:$("#form").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+  }
+});
+  </script>
+
   <script>
     //flashligth effect
     var can = document.getElementById('canvas1');

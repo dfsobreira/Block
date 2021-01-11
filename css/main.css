@@ -16,6 +16,7 @@ body {
 }
 
 .navbar {
+  z-index: 7;
   margin-right: 5vw;
 }
 
@@ -58,10 +59,13 @@ nav a {
 }
 
 .text {
+  z-index: 7;
   position: relative;
   margin-left: 12vw;
   color: rgba(76, 76, 76, 1);
   font-weight: bold;
+  width: fit-content;
+
 }
 .text h1{
   font-size: 10vh;
@@ -71,15 +75,12 @@ nav a {
   padding-top: 10vh;
 }
 .textCol{
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
 }
 
-.text-and-cube{
-  display: flex;
-  flex-direction: row;
-}
+
 
 
 #textof {
@@ -91,13 +92,18 @@ nav a {
 }
 
 iframe {
-  top: 15vh;
-  left: 45vw;
-  width: 50vw;
-  height: 80vh;
+  position: absolute;
+  top: 10vh;
+  left: 40vw;
+  width: 60vw;
+  height: 90vh;
+}
+.cubom{
+  display: none;
 }
 
 .data {
+  z-index: 10;
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -153,51 +159,58 @@ iframe {
 }
 
 .what {
-  width: 100vw;
-  height: 100vh;
+  margin-top: 10vh;
+position: absolute;
+width: 30%;
+z-index: 10;
+left: 10%;
+
 }
 
 .what h2 {
   z-index: 10;
-  position: absolute;
-  margin-top: -2vh;
-  margin-left: 17vw;
   color: #4C4C4C;
   font-size: 2rem;
 }
 
 .what p {
   z-index: 10;
-  position: absolute;
-  margin-top: 15vh;
-  margin-left: 17vw;
   color: rgba(76, 76, 76, 1);
 }
-
+.total-what{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.fact{
+  z-index: 10;
+  width: 25%;
+  position: absolute;
+  right: 4%;
+  bottom:10%;
+}
 .fact h3 {
   z-index: 10;
-  position: absolute;
-  margin-top: 58vh;
-  margin-left: 70vw;
   color: #4C4C4C;
 }
 
 .fact p {
   z-index: 10;
-  position: absolute;
-  margin-top: 61vh;
-  margin-left: 70vw;
   color: rgba(76, 76, 76, 1);
 }
 
 .animation {
-  margin-top: 45vh;
-  transform: rotate(3deg);
+  top: 8vh;
+  z-index: -10;
+  margin-left: -20vw;
+  position: absolute;
 }
 
 .pc {
+  position: relative;
   width: 100vw;
-  height: 100vh;
+  z-index: 10;
+
 }
 
 .pc h1 {
@@ -211,9 +224,8 @@ iframe {
 .pc img {
   z-index: 10;
   display: block;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .reasons {
@@ -232,6 +244,7 @@ iframe {
 }
 
 #texto0 {
+  width: 25%;
   position: absolute;
   margin-top: 20vh;
   margin-left: 15vh;
@@ -268,8 +281,8 @@ iframe {
 
 #texto5 {
   position: absolute;
-  margin-top: 95vh;
-  margin-left: 15vw;
+  margin-top: 100vh;
+  margin-left: 22vw;
   color: #ffffff;
 }
 
@@ -317,43 +330,39 @@ iframe {
 .about {
   position: relative;
   width: 100vw;
-  height: 75vh;
 }
 
 .about h1 {
-  position: absolute;
   margin-top: 10vh;
   margin-left: 10vw;
   color: rgba(76, 76, 76, 1);
 }
 
 .about p {
-  position: absolute;
-  margin-top: 20vh;
+  width: 40%;
   margin-left: 10vw;
   color: rgba(76, 76, 76, 1);
 }
+
+
+
 
 #dots {
   z-index: 2;
   display: block;
   position: absolute;
-  width: 17rem;
-  height: 17rem;
-  padding-top: 28vh;
-  padding-left: 25vh;
+  width: 20%;
+  right: 19vw;
+  top: 10vh;
 }
-
-.mouse {
-  display: block;
-  position: absolute;
-  margin-top: -5vh;
-  margin-left: 50vw;
-}
-
 .scene {
+  margin: 0px;
+  top: -15vh;
+  position: absolute;
+  right: 6vw;
+  width: 45%;
   z-index: 3;
-  position: relative;
+  position: absolute;
   backface-visibility: hidden;
   transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
   transform-style: preserve-3d;
@@ -364,19 +373,15 @@ iframe {
   display: block;
   top: 0px;
   left: 0px;
-  width: 42rem;
-  height: 27rem;
+  width:100%;
   backface-visibility: hidden;
-  transform: translate3d(-58.5px, 45.4px, 0px);
   transform-style: preserve-3d;
 }
-
-.scroller {
+.scroller{
+  margin: 52vh 0;
   position: relative;
-  width: 100vw;
-  height: 100vh;
+   width: 100vw;
 }
-
 .scroller canvas {
   z-index: 3;
   position: absolute;
@@ -386,85 +391,31 @@ iframe {
   left: 0;
   margin: auto;
 }
-
-.rolling {
-  z-index: 5;
-  position: relative;
-  top: 50%;
-  height: 50px;
-  overflow: hidden;
-  transform: translate(0, -50%);
+.dotsm{
+  display: none;
 }
-
-.rolling h1 {
-  position: absolute;
-  width: 100vw;
-  height: 100%;
-  margin: 0;
-  color: rgba(76, 76, 76, 1);
+.scroller h1{
+  font-size: 8vh;
+    color: #4c4c4c;
+    font-style: normal;
+z-index: 5;
+position: relative;
   text-align: center;
-  font-size: 5em;
-  line-height: 50px;
-  -moz-animation: rolling 15s linear infinite;
-  -webkit-animation: rolling 15s linear infinite;
-  animation: rolling 15s linear infinite;
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  /* Starting position */
-  /* Apply animation to this element */
-}
-
-/* Move it (define the animation) */
-@-moz-keyframes rolling {
-  0% {
-    -moz-transform: translateX(100%);
-  }
-
-  100% {
-    -moz-transform: translateX(-100%);
-  }
-}
-
-@-webkit-keyframes rolling {
-  0% {
-    -webkit-transform: translateX(100%);
-  }
-
-  100% {
-    -webkit-transform: translateX(-100%);
-  }
-}
-
-@keyframes rolling {
-  0% {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    /* Firefox bug fix */
-    /* Firefox bug fix */
-  }
-
-  100% {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    /* Firefox bug fix */
-    /* Firefox bug fix */
-  }
 }
 
 .form {
+  padding: 10vh 0;
+  padding-bottom: 20vh;
   position: relative;
   width: 100vw;
-  height: 30vh;
 }
 
 .form p {
-  margin: 10vh;
+  margin: 10vh auto;
   position: relative;
   color: rgba(76, 76, 76, 1);
   text-align: center;
+
 }
 
 .submiter {
@@ -534,6 +485,7 @@ margin-top: 4vh;
 
 /* small phones */
 @media (max-width: 500px) {
+
   .navbar {
     display: none;
   }
@@ -582,68 +534,58 @@ margin-top: 4vh;
 		font-weight: normal;
 		width: 80vw;
 	}
-
-	iframe {
+.cubo{
+  display: none;
+}
+	.cubom {
+    position: relative;
+    display: block;
 		/* position: absolute; */
-		top: 0vh;
-		left: 50vw;
-		width: 100vw;
-		height: 80vh;
-		margin-top: 15vh;
+    width: 95%;
+    margin: 5vh auto 0;
 	}
 
 	.countdownDesktop {
 		display: none;
     }
-    
-  .fact h3 {
-    z-index: 10;
-    position: absolute;
-    margin-top: 100vh;
-    margin-left: 70vw;
-    color: #4C4C4C;
-  }
-  
-  .fact p {
-    z-index: 10;
-    position: absolute;
-    margin-top: 105vh;
-    margin-left: 70vw;
-    color: rgba(76, 76, 76, 1);
-  }
 
+
+.what{
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+}
   .what h2 {
   z-index: 10;
-  position: absolute;
-  margin-top: -2vh;
-  margin-left: 8vw;
-  margin-right: 8vw;
   color: #4C4C4C;
   font-size: 2rem;
 }
-  
-  #blockchain-what{
-    z-index: 10;
-    position: absolute;
-    margin-top: 15vh;
-    margin-left: 8vw;
-    margin-right: 8vw;
-    color: rgba(76, 76, 76, 1);
-  }
+.fact{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 150%;
+  right: 0;
+}
+.animation{
+  top: 84%;
+    left: -216%;
+}
 
   .pc {
     width: 100vw;
     height: 50vh;
   }
-  
+
   .pc h1 {
     z-index: 10;
     position: relative;
-    margin-top: 41vh;
+    margin-top: 25vh;
     color: rgba(76, 76, 76, 1);
     text-align: center;
   }
-  
+
   .pc img {
     z-index: 10;
     width: 100vw;
@@ -660,96 +602,82 @@ margin-top: 4vh;
     outline: 0;
     box-shadow: none;
   }
-  
+
+.reasons{
+  position: relative;
+
+}
   .reasons h1 {
-    position: absolute;
-    margin-top: 7vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    position: relative;
     color: #ffffff;
+    margin:  3vh auto;
+    width: 90%;
+    padding-top: 5vh;
+
   }
 
-  #texto0 {
-    position: absolute;
-    margin-top: 25vh;
-    margin-left: 11vw;
-    margin-right: 5vh;
-    color: #ffffff;
-  }
-  
-  #texto1 {
-    position: absolute;
-    margin-top: 60vh;
-    margin-left: 5vw;
-    color: #ffffff;
-  }
-  
-  #texto2 {
-    position: absolute;
-    margin-top: 50vh;
-    margin-left: 65vw;
-    color: #ffffff;
-  }
-  
-  #texto3 {
-    position: absolute;
-    margin-top: 85vh;
-    margin-left: 70vw;
-    color: #ffffff;
-  }
-  
-  #texto4 {
-    position: absolute;
-    margin-top: 65vh;
-    margin-left: 60vw;
-    color: #ffffff;
-  }
-  
-  #texto5 {
-    position: absolute;
-    margin-top: 95vh;
-    margin-left: 5vw;
-    margin-right: 35vw;
-    color: #ffffff;
-  }
-  
-  #texto6 {
-    position: relative;
-    top: 120vh;
-    left: 50%;
-    margin: 0px;
-    color: #FFFFFF;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    transform: translate(-50%, -50%);
-  }
+
+#texto0,#texto1,#texto2,#texto3,#texto4,#texto5,#texto6{
+  position: relative;
+  width:90%;
+  margin: 3vh auto;
+}
+#texto6{
+top:0;
+left:0;
+text-align: initial;
+transform: initial;
+
+}
+.floating{
+  margin-top: -63vh;
+}
 
 
   .floating img {
-    width: 50vw;
-    height: 130vh;
+    width: 70vw;
+    height: 150vh;
     margin-top: 10vh;
   }
+.about{
+  display:flex;
+  flex-direction: column;
+}
+.aboutt{
+  width: 90%;
+margin: 5vh auto;
+}
 
-  .about h1 {
+.scroller {
+  display: none;
+}
+.scroller canvas{
+  display: none
+}
+.dotsm{
+  display: block;
+  z-index: 3;
+  width: 50%;
+  margin: 0 auto;
+}
+.aboutt p,.aboutt h1{
+  width: 100%;
+margin: 0 ;
+}
+#dots{
+  margin-top: 16vh;
+position: relative;
+width: 100%;
+right: 0;
+}
+.scene{
+  top: 45vh;
     position: absolute;
-    margin-top: 10vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    color: rgba(76, 76, 76, 1);
-  }
-  
-  .about p {
-    position: absolute;
-    margin-top: 20vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    color: rgba(76, 76, 76, 1);
-  }
-
+    right: -63vw;
+    width: 103vh;
+}
 	.data {
-		margin-top: 120vh;
+		margin-top: 20vh;
 		position: relative;
 		width: 100vw;
 		height: 100vh;
@@ -757,6 +685,10 @@ margin-top: 4vh;
 			#00CCFF 0%,
 			#01A6FF 100%);
 		}
+
+    .data p{
+      margin-top:10vh;
+    }
     .final{
       display: flex;
       flex-direction: column;
@@ -767,7 +699,7 @@ margin-top: 4vh;
     .ham{
       display: flex;
     }
-    
+
     .content{
       display: flex;
     }
@@ -787,8 +719,8 @@ margin-top: 4vh;
     .ham img{
       width: 100%;
     }
-    
-    
+
+
     .content {
       position: absolute;
       z-index: 1999;
@@ -804,15 +736,15 @@ margin-top: 4vh;
       /* transition adds a little animation when sliding in and out the menu */
       transition: transform 0.2s ease;
     }
-    
-    
+
+
     .showNav {
       /* show the menu */
       transform: translateY(0);
     }
-    
+
     /* basic nav styling below */
-    
+
     .content ul {
       padding: 0;
       width: 100%;
@@ -823,7 +755,7 @@ margin-top: 4vh;
       justify-content: space-evenly;
       align-items: center;
     }
-    
+
     .content ul li a {
       color:  #01A6FF;
       padding-bottom: 10px;
