@@ -121,10 +121,11 @@
     <canvas id="canvas1" width="770" height="771" align="right"></canvas>
     <img class="dotsm" src="images/dotsm.png">
   </div>
-  <form  class="form">
+  <form  class="form" id="myForm">
     <p>Subscribe to get first-hand news about <br> Porto Blockchain Conference!</p>
     <div class="submiter">
       <input type="text" placeholder="Insira o seu e-mail" name="email" id="email" required>
+      <a onclick="SubForm()"  id="submit">submit</a>
     </div>
   </form>
   <footer class="final">
@@ -164,21 +165,19 @@
     </div>
   </footer>
   <script>
-  $("#emal").keypress(function(e) {
-  if(e.keyCode == 13) {
+  function SubForm (){
     $.ajax({
-      url:"https://api.apispreadsheets.com/data/6257/",
-				type:"post",
-				data:$("#form").serializeArray(),
-				success: function(){
-					alert("Form Data Submitted :)")
-				},
-				error: function(){
-					alert("There was an error :(")
-				}
-			});
-  }
-});
+        url:'https://api.apispreadsheets.com/data/6282/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
   </script>
 
   <script>

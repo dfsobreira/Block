@@ -210,6 +210,8 @@ left: 10%;
   position: relative;
   width: 100vw;
   z-index: 10;
+  margin: 50vh 0 0;
+
 
 }
 
@@ -330,6 +332,7 @@ left: 10%;
 .about {
   position: relative;
   width: 100vw;
+  height: 60vh;
 }
 
 .about h1 {
@@ -410,6 +413,7 @@ position: relative;
   width: 100vw;
 }
 
+
 .form p {
   margin: 10vh auto;
   position: relative;
@@ -435,6 +439,13 @@ position: relative;
   outline: none;
   outline: 0;
   box-shadow: none;
+}
+#submit{
+  margin-top:  5vh;
+  color: #0099FF;
+  cursor: pointer;
+
+
 }
 
 .final {
@@ -574,6 +585,7 @@ margin-top: 4vh;
 }
 
   .pc {
+    margin-top: 0vh;
     width: 100vw;
     height: 50vh;
   }
@@ -581,7 +593,7 @@ margin-top: 4vh;
   .pc h1 {
     z-index: 10;
     position: relative;
-    margin-top: 25vh;
+    margin-top: 20vh;
     color: rgba(76, 76, 76, 1);
     text-align: center;
   }
@@ -688,6 +700,11 @@ right: 0;
 
     .data p{
       margin-top:10vh;
+    }
+
+    .form{
+      padding: 70vh 0 10vh;
+
     }
     .final{
       display: flex;
