@@ -214,8 +214,6 @@ left: 10%;
   width: 100vw;
   z-index: 10;
   margin: 50vh 0 0;
-
-
 }
 
 .pc h1 {
@@ -336,7 +334,6 @@ left: 10%;
 .about {
   position: relative;
   width: 100vw;
-  height: 60vh;
 }
 
 .about h1 {
@@ -362,6 +359,21 @@ left: 10%;
   right: 19vw;
   top: 10vh;
 }
+
+.sponsors{
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+  color: rgba(76, 76, 76, 1);
+
+}
+.sponsors h1{
+  margin-left: 10vw;
+}
+.sponsors img{
+  margin-left: 10vw;
+  width: 20%;
+}
+
 .scene {
   margin: 0px;
   top: -15vh;
@@ -712,9 +724,17 @@ right: 0;
     .data p{
       margin-top:10vh;
     }
+    .sponsorsi{
+      display: flex;
+flex-direction: column;
+
+    }
+    .sponsors img{
+      width: 59%;
+    }
 
     .form{
-      padding: 40rem 0 50px;
+      padding: 2rem 0 50px;
 
     }
     .final{
@@ -1007,9 +1027,17 @@ right: 0;
     .data p{
       margin-top:10vh;
     }
+    .sponsorsi{
+      display: flex;
+flex-direction: column;
+
+    }
+    .sponsors img{
+      width: 59%;
+    }
 
     .form{
-      padding: 40rem 0 50px;
+      padding: 2rem 0 50px;
 
     }
     .final{
