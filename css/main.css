@@ -521,6 +521,8 @@ margin-top: 4vh;
   .text p{
     margin: 0px;
     padding-top: 0px;
+    width: 100%;
+
   }
   .homepage{
     height: 115vh;
@@ -810,6 +812,7 @@ right: 0;
     line-height: 9vh;
   }
   .text p{
+    width: 100%;
     margin: 0px;
     padding-top: 0px;
   }
