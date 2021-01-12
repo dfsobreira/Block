@@ -73,6 +73,8 @@ nav a {
 }
 .text p{
   padding-top: 10vh;
+  width: 28vw;
+
 }
 .textCol{
   width: auto;
