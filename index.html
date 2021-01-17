@@ -2,15 +2,18 @@
 <html>
 
 <head>
+  <title>Porto Blockchain Conference</title>
+  <link rel="icon" type="image/png" href="images/fav.png" sizes="32x32" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+
 <body>
   <div class="homepage">
     <nav>
@@ -46,7 +49,7 @@
           <p>Porto.BC is for anyone who wants to learn more about Blockchain technology for new projects or their jobs.</p>
         </div>
       </div>
-<iframe class="cubo"src='https://my.spline.design/testes-0952e589d2dae705283a8a3f6f126d69/' frameborder='0'></iframe>
+      <iframe class="cubo" src='https://my.spline.design/testes-0952e589d2dae705283a8a3f6f126d69/' frameborder='0'></iframe>
       <img class="cubom" src="images/cubem.svg" alt="">
     </div>
   </div>
@@ -68,13 +71,12 @@
         in a safe and non-corruptible way.
       </p>
       <div class="animation">
-        <lottie-player id="anim" src="https://assets6.lottiefiles.com/packages/lf20_em5kn4r4/pasta sem nome/data.json"
-          background="transparent" speed="0.9" style="width: 70rem; height: 70rem;" autoplay></lottie-player>
+        <lottie-player id="anim" src="https://assets6.lottiefiles.com/packages/lf20_em5kn4r4/pasta sem nome/data.json" background="transparent" speed="0.9" style="width: 70rem; height: 70rem;" autoplay></lottie-player>
       </div>
     </div>
     <div id="fact" class="fact">
       <h3>Fact</h3>
-      <p>The global blockchain market is expected to be worth $20 bilion by 2024.</p>
+      <p>The global blockchain market is expected to be worth $20 billion by 2024.</p>
     </div>
   </div>
 
@@ -119,18 +121,19 @@
     <div class="sponsorsi">
       <img src="images/blocksmith.png" alt="">
       <img src="images/agap2it.png" alt="">
+      <img src="images/coinspeaker.png" alt="">
     </div>
   </div>
   <div class="scroller">
-      <h1>You don’t want to miss any news</h1>
+    <h1>You don’t want to miss any news</h1>
     <canvas id="canvas1" width="770" height="771" align="right"></canvas>
     <img class="dotsm" src="images/dotsm.png">
   </div>
-  <form  class="form" id="myForm">
+  <form class="form" id="myForm">
     <p>Subscribe to get first-hand news about <br> Porto Blockchain Conference!</p>
     <div class="submiter">
       <input type="text" placeholder="Insira o seu e-mail" name="email" id="email" required>
-      <a onclick="SubForm()"  id="submit">submit</a>
+      <a onclick="SubForm()" id="submit">submit</a>
     </div>
   </form>
   <footer class="final">
@@ -170,19 +173,19 @@
     </div>
   </footer>
   <script>
-  function SubForm (){
-    $.ajax({
-        url:'https://api.apispreadsheets.com/data/6282/',
-        type:'post',
-        data:$("#myForm").serializeArray(),
-        success: function(){
+    function SubForm() {
+      $.ajax({
+        url: 'https://api.apispreadsheets.com/data/6282/',
+        type: 'post',
+        data: $("#myForm").serializeArray(),
+        success: function() {
           alert("Form Data Submitted :)")
         },
-        error: function(){
+        error: function() {
           alert("There was an error :(")
         }
-    });
-}
+      });
+    }
   </script>
 
   <script>
@@ -190,13 +193,13 @@
     var can = document.getElementById('canvas1');
     var ctx = can.getContext('2d');
 
-    can.addEventListener('mousemove', function (e) {
+    can.addEventListener('mousemove', function(e) {
       var mouse = getMouse(e, can);
       redraw(mouse);
     }, false);
 
     var img = new Image();
-    img.onload = function () {
+    img.onload = function() {
       redraw({
         x: -500,
         y: -500
@@ -257,7 +260,7 @@
     var countDownDate = new Date("February 6, 2021 00:00:00").getTime();
 
     // Update the count down every 1 second
-    var x = setInterval(function () {
+    var x = setInterval(function() {
 
       // Get today's date and time
       var now = new Date().getTime();
@@ -299,7 +302,7 @@
     // METHOD 1
     var menuLinks = document.querySelectorAll(".menuLink")
     menuLinks.forEach(
-      function (menuLink) {
+      function(menuLink) {
         menuLink.addEventListener("click", toggleHamburger)
       }
     )

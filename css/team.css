@@ -1,52 +1,53 @@
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
 body {
-  width:100vw;
-  margin      : 0px;
-  padding     : 0px;
-  overflow-x  : hidden;
-  font-family : Hind;
-  font-style  : normal;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: Hind;
+  font-style: normal;
 }
+
 .navbar {
-  margin-right : 5vw;
+  margin-right: 5vw;
 }
 
 nav {
-  display         : flex;
-  align-items     : center;
-  justify-content : space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav ul {
-  text-align : center;
-  list-style : none;
+  text-align: center;
+  list-style: none;
 }
 
 nav li {
-  display : inline-table;
-  padding : 0 40px 0px 40px;
+  display: inline-table;
+  padding: 0 40px 0px 40px;
 }
 
 nav a {
-  display         : block;
-  color           : rgba(76, 76, 76, 1);
-  text-decoration : none;
-  font-size       : 1em;
-  font-weight     : normal;
-  line-height     : normal;
+  display: block;
+  color: rgba(76, 76, 76, 1);
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: normal;
 }
 
 .logo img {
-  height      : 8rem;
-  margin-left : 5vw;
+  height: 8rem;
+  margin-left: 5vw;
 }
 
 .team {
   position: relative;
-  height: fit-content;
   width: 60vw;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -56,8 +57,7 @@ nav a {
   display: grid;
   grid-template-columns: 5fr 1fr;
   grid-template-rows: 1fr 5fr;
-  margin:  0 auto;
-
+  margin: 0 auto;
 }
 
 .team h1 {
@@ -65,8 +65,8 @@ nav a {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
- grid-row-end: 2;
-  color       : rgba(76, 76, 76, 1);
+  grid-row-end: 2;
+  color: rgba(76, 76, 76, 1);
 }
 
 .team p {
@@ -75,19 +75,19 @@ nav a {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  color       : rgba(76, 76, 76, 1);
+  color: rgba(76, 76, 76, 1);
 }
-.team img{
+
+.team img {
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start:1;
- grid-row-end: 3;
- padding: 17vh 2vw 0vh;
-
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 17vh 2vw 0vh;
 }
 
-
 .final {
+  bottom: 0;
   clear: both;
   justify-items: center;
   text-align: left;
@@ -98,147 +98,148 @@ nav a {
   grid-template-columns: 1fr 1fr 1fr;
   color: rgba(76, 76, 76, 1);
 }
-.column1{
+
+.column1 {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   grid-column-start: 1;
   grid-column-end: 2;
 }
-.column2{
+
+.column2 {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   grid-column-start: 2;
   grid-column-end: 3;
 }
-.column2 img{
-margin-top: 3vh;
+
+.column2 img {
+  margin-top: 3vh;
 }
-.column3{
+
+.column3 {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   grid-column-start: 3;
   grid-column-end: 4;
 }
-.column3 img{
-margin-top: 4vh;
-}
 
+.column3 img {
+  margin-top: 4vh;
+}
 
 .social a {
   text-decoration: none;
 }
 
-.last{
+.last {
   margin-left: 2vw;
 }
 
-.ham{
-  display: none;
-}
-
-.content{
-  display: none;
-}
-@media (max-width: 576px) {
-
-  .team{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-bottom: 10vh;
-
-
-  }
-  .team h1{
-width: 50%;
-padding-left: 3vw;
-
-  }
-  .team p{
-width: 90%;
-margin: auto;
-padding-left: 3vw;
-margin-bottom: 15vw;
-  }
-  .team img{
-    margin-bottom: 15vw;
-  }
-.final{
-  display: flex;
-  flex-direction: column;
-  padding-left: 4vw;
-
-}
-
-.navbar{
-  display: none;
-}
-
-.ham{
-  display: flex;
-}
-
-.content{
-  display: flex;
-}
-
 .ham {
-  /* always keep ham on top of everything */
-  position: relative;
-  z-index: 2000;
-  padding-bottom: 3vh;
-  padding-right: 10vw;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  background-size: 100%;
+  display: none;
 }
-
-.ham img{
-  width: 100%;
-}
-
 
 .content {
-  position: absolute;
-  z-index: 1999;
-  top: 0;
-  left: 0;
-  background: #ffffff;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  color: white;
-  /* hide the menu above the screen by default */
-  transform: translateY(-100%);
-  /* transition adds a little animation when sliding in and out the menu */
-  transition: transform 0.2s ease;
+  display: none;
 }
 
+@media (max-width: 576px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10vh;
+  }
 
-.showNav {
-  /* show the menu */
-  transform: translateY(0);
-}
+  .team h1 {
+    width: 50%;
+    padding-left: 3vw;
+  }
 
-/* basic nav styling below */
+  .team p {
+    width: 90%;
+    margin: auto;
+    padding-left: 3vw;
+    margin-bottom: 15vw;
+  }
 
-.content ul {
-  padding: 0;
-  width: 100%;
-  height: 50%;
-  list-style: none;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
+  .team img {
+    margin-bottom: 15vw;
+  }
 
-.content ul li a {
-  color:  #01A6FF;
-  padding-bottom: 10px;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
-}
+  .final {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4vw;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .ham {
+    display: flex;
+  }
+
+  .content {
+    display: flex;
+  }
+
+  .ham {
+    /* always keep ham on top of everything */
+    position: relative;
+    z-index: 2000;
+    padding-bottom: 3vh;
+    padding-right: 10vw;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-size: 100%;
+  }
+
+  .ham img {
+    width: 100%;
+  }
+
+  .content {
+    position: absolute;
+    z-index: 1999;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    /* hide the menu above the screen by default */
+    transform: translateY(-100%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+  }
+
+  .showNav {
+    /* show the menu */
+    transform: translateY(0);
+  }
+
+  /* basic nav styling below */
+  .content ul {
+    padding: 0;
+    width: 100%;
+    height: 50%;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .content ul li a {
+    color: #01A6FF;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+  }
 }

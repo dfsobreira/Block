@@ -114,8 +114,7 @@ color: #4C4C4C;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  cursor: pointer;
-}
+  cursor: pointer;}
 
 .days h3{
     font-family: Hind;
