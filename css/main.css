@@ -70,7 +70,7 @@ nav a {
 
 .text h1 {
   font-size: 10vh;
-  line-height: 70px;
+  line-height: 80px;
 }
 
 .text p {
@@ -794,7 +794,7 @@ iframe {
     left: 0;
     background: #ffffff;
     width: 100vw;
-    height: 170vw;
+    height: 250vw;
     overflow: hidden;
     color: white;
     /* hide the menu above the screen by default */
@@ -1106,7 +1106,7 @@ iframe {
     left: 0;
     background: #ffffff;
     width: 100vw;
-    height: 100vh;
+    height: 240vw;
     overflow: hidden;
     color: white;
     /* hide the menu above the screen by default */

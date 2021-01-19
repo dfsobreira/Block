@@ -190,7 +190,7 @@ nav a {
     left: 0;
     background: #ffffff;
     width: 100vw;
-    height: 100vh;
+    height: 240vw;
     overflow: hidden;
     color: white;
     /* hide the menu above the screen by default */

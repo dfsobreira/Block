@@ -4,12 +4,16 @@ html, body {
 }
 
 body {
+  height: 100vh;
   width: 100vw;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
   font-family: Hind;
   font-style: normal;
+}
+main{
+  height: auto;
 }
 
 .navbar {
@@ -145,6 +149,9 @@ nav a {
 }
 
 @media (max-width: 576px) {
+  main{
+    height: auto;
+  }
   .team {
     display: flex;
     flex-direction: column;
@@ -209,7 +216,7 @@ nav a {
     left: 0;
     background: #ffffff;
     width: 100vw;
-    height: 100vh;
+    height: 240vw;
     overflow: hidden;
     color: white;
     /* hide the menu above the screen by default */
